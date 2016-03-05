@@ -25,29 +25,25 @@ To use it as a template, your computer needs:
 
 #### Step 1
 
-- The easiest way to set it up is by downloading the zip file using the `Download ZIP` button above. Then unzip the file and copy its content to your wp themes folder(`'your-wp-root-folder'/wp-content/themes`).
+Clone this repo into your wp `themes` folder:
 
-- Otherwise you can clone this repo, but you first need to delete your themes folder at `'your-wp-root-folder'/wp-content/themes` (so backup the stuff you have inside it if you want to put them back after installing this repo).
-Then clone it to the `wp-content` folder and call it `themes`:
-
-  ```bash
-  cd 'your-wp-root-folder'/wp-content
-  git clone https://github.com/bendecastro/gulp-build-wp themes
-  ```
+```bash
+cd 'your-wp-root-folder'/wp-content/themes
+git clone https://github.com/bendecastro/gulp-build-wp
+```
 
 #### Step 2
 
-- cd into `themes` and install the needed dependencies:
+Install the needed dependencies:
 
-  ```bash
-  cd themes
-  npm install
-  bower install
-  ```
+```bash
+npm install
+bower install
+```
 
 #### Step 3
 
-- Finally, run `npm start` to run Gulp. The distribution files will be created in the folder called `dist`.
+Finally, run `npm start` to run Gulp. The distribution files will be created in the folder called `dist`.
 
 
 ### Options
