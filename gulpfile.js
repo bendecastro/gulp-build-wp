@@ -6,7 +6,6 @@ concat     = require('gulp-concat'),
 del        = require('del'),
 gulp       = require('gulp'),
 //imagemin   = require('gulp-imagemin'),
-JPEGmin    = require('imagemin-mozjpeg'),
 less       = require('gulp-less'),
 minifyCss  = require('gulp-cssnano'),
 //minifyJS   = require('gulp-uglify'),
@@ -272,21 +271,9 @@ gulp.task('javascript', function() {
 });
 
 
-// After creating a production-ready build, a lossy version of the images is created in the src folder and stored in '../img/lossy'
-gulp.task('JPEG', function(cb) {
-  var lossy = when(env === 'production', 
-    JPEGmin({quality: 70})()
-    .pipe(gulp.dest('src/assets/img/lossy')));
-
-  gulp.src(PATHS.img)
-    .pipe(lossy);
-  cb();
-});
-
-
 // Copy images to the "dist" folder
 // In production, the images are compressed
-gulp.task('images', ['JPEG'], function() {
+gulp.task('images', function() {
   var imagemin = when(env === 'production', $.imagemin({
     progressive: true
   }));
@@ -300,7 +287,7 @@ gulp.task('images', ['JPEG'], function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', [cssLang, 'copy', 'javascript', 'images'], 'cssPolish', done);
+  sequence('clean', ['copy', 'cssPolish', 'javascript', 'images'], done);
 });
 
 
