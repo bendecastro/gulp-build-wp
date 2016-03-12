@@ -56,9 +56,9 @@ var PATHS = {
     temp: 'src/assets/css/zzzz-scss-to-css/',
     main: 'src/assets/css/scss/main.scss',
     rest: [
-    'bower_components/foundation-sites/scss/',
-    'bower_components/motion-ui/src/',
-    'bower_components/bootstrap-sass/assets/stylesheets/',
+    //'bower_components/foundation-sites/scss/',
+    //'bower_components/motion-ui/src/',
+    //'bower_components/bootstrap-sass/assets/stylesheets/',
     'bower_components/material-design-lite/src/'
     ]
   },

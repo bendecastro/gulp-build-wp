@@ -2,7 +2,7 @@
         
       <?php wp_footer(); ?>
       </footer>
-    </main>
+    </main><!-- /.main-content -->
   </div><!-- /.wrapper -->
 </body>
 </html>
