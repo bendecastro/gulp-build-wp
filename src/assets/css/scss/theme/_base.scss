@@ -1,0 +1,114 @@
+/*
+
+INDEX
+ * Typography
+ * Colors and Shadows
+ * MDL Framework Resets
+ 
+  Order of appearance
+	 * General
+	 * Main Header
+	 * Main Sidebar
+	 * Main Content
+	 * Main Footer
+
+*/
+
+/*
+==============================================
+Typography
+==============================================
+*/
+
+/* ========== Typography: General ========== */
+body {
+	font-family: $main-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $stylish-font-secondary;
+}
+
+
+
+/*
+==============================================
+Colors and Shadows
+==============================================
+*/
+
+/* ========== Colors and Shadows: General ========== */
+body {
+	background-color: $primary-background-color;
+}
+
+p {
+	color: $white-text-color-blacker;
+}
+
+
+/* ========== Colors and Shadows: Main Header ========== */
+.main-header .main-header-inner {
+	background-color: $primary-background-color-lighter;
+	color: $text-color;
+}
+
+.main-header-inner {
+	@include shadow-6dp;
+}
+
+.main-header .mdl-layout__drawer-button {
+	color: $text-color;
+}
+
+.main-header .navigation-link {
+	color: $accent-color;
+}
+
+
+/* ==========  Colors and Shadows: Main Sidebar ========== */
+.main-sidebar {
+	background-color: $primary-background-color-lighter;
+}
+
+.main-sidebar {
+	@include shadow-6dp;
+}
+
+.post {
+	@include shadow-2dp;
+}
+
+
+/* ========== Colors and Shadows: Main Content ========== */
+#div1 {
+	background-color: $primary-background-color-darker; 
+}
+
+#div2 {
+	background-color: $accent-color; 
+}
+
+#div3 {
+	background-color: $accent-color-darker; 
+}
+
+#div4 {
+	background-color: $primary-color; 
+}
+
+
+/* ========== Colors and Shadows: Main Footer ========== */
+
+
+/*
+==============================================
+MDL Framework Resets
+==============================================
+*/
+
+.main-sidebar-container {
+	border: none;
+	background: transparent;
+	box-shadow: none;
+}

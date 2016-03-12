@@ -1,0 +1,7 @@
+$grid-large-desktop-breakpoint: $grid-desktop-breakpoint + 185; // =1025px
+
+@media (min-width: $grid-large-desktop-breakpoint) {
+	body {
+		background-color: $primary-color;
+	}
+}

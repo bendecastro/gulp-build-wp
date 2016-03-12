@@ -1,0 +1,27 @@
+/* ========== Fonts ========== */
+$main_font: "Helvetica", "Roboto", "Arial", sans-serif;
+$stylish-font: "Lobster Two", "Helvetica", "Arial", sans-serif;
+$stylish-font-secondary: "Lora", "Helvetica", "Arial", sans-serif;
+
+
+
+/* ========== Colors ========== */
+$primary-color: unquote("rgb(#{$palette-blue-400})");
+$primary-color-darker: unquote("rgb(#{$palette-blue-600})");
+$primary-color-lighter: unquote("rgb(#{$palette-blue-200})");
+
+$accent-color: unquote("rgb(#{$palette-pink-400})");
+$accent-color-darker: unquote("rgb(#{$palette-pink-600})");
+$accent-color-lighter: unquote("rgb(#{$palette-pink-200})");
+
+$primary-background-color: unquote("rgb(#{$palette-grey-400})");
+$primary-background-color-darker: unquote("rgb(#{$palette-grey-600})");
+$primary-background-color-lighter: unquote("rgb(#{$palette-grey-200})");
+
+$text-color: unquote("rgba(#{$color-black}, 0.87)");
+$text-color-darker: unquote("rgb(#{$color-black})");
+$text-color-lighter: unquote("rgba(#{$palette-grey-800}, 0.87)");
+
+$white-text-color: unquote("rgba(#{$color-white}, 0.87)");
+$white-text-color-blacker: unquote("rgba(#{$palette-grey-100}, 0.87)");
+$white-text-color-whiter: unquote("rgb(#{$color-white})");

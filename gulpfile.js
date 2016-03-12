@@ -111,8 +111,8 @@ var PATHS = {
     //'bower_components/foundation-sites/js/foundation.toggler.js',
     //'bower_components/foundation-sites/js/foundation.tooltip.js',
 
-    //// Path to Material Design JS file
-    //'bower_components/material-design-lite/material.js',
+    // Path to Material Design JS file
+    'bower_components/material-design-lite/material.js',
 
     'src/assets/js/!(main).js',
     'src/assets/js/main.js'
@@ -156,7 +156,8 @@ gulp.task('copy', function(cb) {
     .pipe(when(wpStyle,
       gulp.src(wpStyle)
         .pipe(rename('style.css'))))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(browser.reload({ stream: true }));
   cb();
 });
 

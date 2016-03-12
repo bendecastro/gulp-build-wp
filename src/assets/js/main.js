@@ -1,9 +1,11 @@
 ;(function() {
 "use strict";
+//// Vanilla Javascript
+	// document.getElementsByTagName('body').setAttribute('style', 'background-color: grey;');
 
 	(function($) {
-
-		$('body').css('background-color', 'grey');
+	//// jQuery	
+		// $('body').css('background-color', 'grey');
 
 	})(jQuery);
 }());

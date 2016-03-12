@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?php wp_title(); ?></title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php get_header(); ?>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <?php wp_head(); ?>
-    </head>
-    <body <?php body_class(); ?> >
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-    </body>
-</html>
+<main class="main-content mdl-layout__content">
+    <div class="posts-container mdl-grid">
+        <div class="post mdl-cell mdl-cell--6-col-desktop" id="div1">
+            <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
+            <p>Non quia quisquam minus voluptatem eos laborum aut. Voluptas similique a et officia. Consequatur beatae quibusdam eligendi. Et itaque illo suscipit non ipsum. Labore repudiandae eum sint voluptas et ea reprehenderit. Maiores tempore est nesciunt numquam quia maxime. Sunt voluptates voluptas non nostrum tempora. Modi pariatur deserunt voluptates asperiores ovident ut exercitationem qui. Et dolor est eum exercitationem facere et. Facilis dolor consequatur natus optio dolores autem. Voluptatem quia saepe esse. Ut nisi ut aperiam et eaque illo. Voluptates alias animi voluptatem asperiores dolores. Maiores architecto rerum eveniet autem provident nisi. Totam ratione et ad rerum officia eos dolore quas. Voluptatem saepe quidem impedit eum. Expedita culpa qui commodi asperiores. Qui rem dolores exercitationem quidem nulla quia. Enim et voluptatem vel dolorem eos culpa veritatis velit.</p>
+        </div>
+        <div class="post mdl-cell mdl-cell--3-col-desktop" id="div2">
+            <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
+            <p>Non quia quisquam minus voluptatem eos laborum aut. Voluptas similique a et officia. Consequatur beatae quibusdam eligendi. Et itaque illo suscipit non ipsum. Labore repudiandae eum sint voluptas et ea reprehenderit. Maiores tempore est nesciunt numquam quia maxime. Sunt voluptates voluptas non nostrum tempora. Modi pariatur deserunt voluptates asperiores ovident ut exercitationem qui. Et dolor est eum exercitationem facere et. Facilis dolor consequatur natus optio dolores autem. Voluptatem quia saepe esse. Ut nisi ut aperiam et eaque illo. Voluptates alias animi voluptatem asperiores dolores. Maiores architecto rerum eveniet autem provident nisi. Totam ratione et ad rerum officia eos dolore quas. Voluptatem saepe quidem impedit eum. Expedita culpa qui commodi asperiores. Qui rem dolores exercitationem quidem nulla quia. Enim et voluptatem vel dolorem eos culpa veritatis velit.</p>
+        </div>
+        <div class="post mdl-cell mdl-cell--3-col-desktop" id="div3">
+            <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
+            <p>Non quia quisquam minus voluptatem eos laborum aut. Voluptas similique a et officia. Consequatur beatae quibusdam eligendi. Et itaque illo suscipit non ipsum. Labore repudiandae eum sint voluptas et ea reprehenderit. Maiores tempore est nesciunt numquam quia maxime. Sunt voluptates voluptas non nostrum tempora. Modi pariatur deserunt voluptates asperiores ovident ut exercitationem qui. Et dolor est eum exercitationem facere et. Facilis dolor consequatur natus optio dolores autem. Voluptatem quia saepe esse. Ut nisi ut aperiam et eaque illo. Voluptates alias animi voluptatem asperiores dolores. Maiores architecto rerum eveniet autem provident nisi. Totam ratione et ad rerum officia eos dolore quas. Voluptatem saepe quidem impedit eum. Expedita culpa qui commodi asperiores. Qui rem dolores exercitationem quidem nulla quia. Enim et voluptatem vel dolorem eos culpa veritatis velit.</p>
+        </div>
+        <div class="post mdl-cell mdl-cell--12-col-desktop" id="div4">
+            <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
+            <p>Non quia quisquam minus voluptatem eos laborum aut. Voluptas similique a et officia. Consequatur beatae quibusdam eligendi. Et itaque illo suscipit non ipsum. Labore repudiandae eum sint voluptas et ea reprehenderit. Maiores tempore est nesciunt numquam quia maxime. Sunt voluptates voluptas non nostrum tempora. Modi pariatur deserunt voluptates asperiores ovident ut exercitationem qui. Et dolor est eum exercitationem facere et. Facilis dolor consequatur natus optio dolores autem. Voluptatem quia saepe esse. Ut nisi ut aperiam et eaque illo. Voluptates alias animi voluptatem asperiores dolores. Maiores architecto rerum eveniet autem provident nisi. Totam ratione et ad rerum officia eos dolore quas. Voluptatem saepe quidem impedit eum. Expedita culpa qui commodi asperiores. Qui rem dolores exercitationem quidem nulla quia. Enim et voluptatem vel dolorem eos culpa veritatis velit.</p>
+        </div>
+    </div><!-- /.posts-container -->
+<?php get_footer(); ?>

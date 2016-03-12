@@ -1,9 +1,5 @@
 @charset 'utf-8';
 
-// //Import Fonts
-// @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
-
-
 // //Import Foundation
 // @import 'foundation-custom-settings';
 // @import 'foundation';
@@ -53,11 +49,27 @@
 // @import 'bootstrap';
 
 
-// //Import Google Material Design
-@import 'mdl-reset-variables'; // comment out @import "variables"; from bower_components/material-design-lite/src/material-design-lite.scss:20 (and eventual unused components)
-@import 'material-design-lite';
+//Import Google Material Design
+@import 'mdl/mdl-reset-variables'; // comment out @import "variables"; from bower_components/material-design-lite/src/material-design-lite.scss:20 (and eventual unused components)
+@import 'mdl/material-design-lite';
 
 
-// // Import Components
-@import "global"; // Global styles
-@import "components/example";
+//Import Fonts
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'http://fonts.googleapis.com/css?family=Lobster+Two:400';
+@import 'http://fonts.googleapis.com/css?family=Lora:400';
+
+
+// Import Theme Settings
+@import "theme/theme-variables";
+@import "theme/base";
+@import "theme/layout";
+@import "theme/states";
+
+
+// Import Modules
+@import "modules/form";
+
+
+// Import Styles for Media Queries
+@import "viewports/large-desktop-onward"; // >=1025px
